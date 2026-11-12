@@ -1,0 +1,34 @@
+
+# Secrets
+.env
+.env.*
+!.env.example
+api.env
+api.*
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Uploaded files and datasets
+storage/uploads/
+data3/
+
+# Temporary files
+inspected_pages.txt
+*.log
+
+# IDE and system
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup archives
+*.zip
