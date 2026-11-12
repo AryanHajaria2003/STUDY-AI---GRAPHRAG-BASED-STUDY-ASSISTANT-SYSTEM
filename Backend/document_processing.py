@@ -2,6 +2,7 @@
 import pymupdf
 import pytesseract
 import re
+import os
 
 from PIL import Image
 from io import BytesIO
@@ -9,9 +10,14 @@ from pathlib import Path
 from datetime import datetime, timezone
 from uuid import uuid4
 
-pytesseract.pytesseract.tesseract_cmd = (
-    r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-)
+
+# Tesseract configuration for Windows and Streamlit Cloud
+if os.name == "nt":
+    pytesseract.pytesseract.tesseract_cmd = (
+        r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    )
+else:
+    pytesseract.pytesseract.tesseract_cmd = "tesseract"
 
 
 def clean_text(text):
@@ -83,6 +89,6 @@ def process_document(file_path):
     }
 
 
-# Keep compatibility with the previous PDF function.
+# Compatibility with the previous PDF function
 def process_pdf(pdf_path):
     return process_document(pdf_path)
