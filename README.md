@@ -1,6 +1,6 @@
 # Study AI – GraphRAG Based Study Assistant System
 
-Study AI is an AI-powered study assistant that uses Graph Retrieval-Augmented Generation (GraphRAG) to generate personalized study plans from uploaded syllabuses.
+Study AI is an AI-powered study assistant that uses Graph Retrieval-Augmented Generation (GraphRAG) to generate study plans from uploaded syllabuses.
 
 ## Features
 
@@ -31,17 +31,14 @@ Study AI is an AI-powered study assistant that uses Graph Retrieval-Augmented Ge
 
 ```text
 Graph_RG/
-│
 ├── Main.py
 ├── complete_graph_build.py
 ├── answer_generation.py
-│
 ├── Backend/
 ├── tests/
 ├── utilities/
 ├── data3/
 ├── storage/
-│
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -49,27 +46,15 @@ Graph_RG/
 
 ## Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/AryanHajaria2003/STUDY-AI---GRAPHRAG-BASED-STUDY-ASSISTANT-SYSTEM.git
-```
-
-2. Open the project directory:
-
-```bash
-cd STUDY-AI---GRAPHRAG-BASED-STUDY-ASSISTANT-SYSTEM
-```
-
-3. Install dependencies:
+1. Clone the repository.
+2. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Configure your `.env` file with your Groq API key and Neo4j credentials.
-
-5. Start the application:
+3. Configure your `.env` file with your Groq API key and Neo4j credentials.
+4. Start the application:
 
 ```bash
 streamlit run Main.py
@@ -82,14 +67,9 @@ streamlit run Main.py
 - Groq API Key
 - Tesseract OCR
 
-## Useful Links
+## Live Application
 
-- [GitHub Repository](https://github.com/AryanHajaria2003/STUDY-AI---GRAPHRAG-BASED-STUDY-ASSISTANT-SYSTEM)
-- [Neo4j](https://neo4j.com/)
-- [Groq](https://groq.com/)
-- [Streamlit](https://streamlit.io/)
-- [Python](https://www.python.org/)
-- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
+**[Open Study AI](https://study-ai---graphrag-based-study-assistant-system-aryan-hajaria.streamlit.app/)**
 
 ## Author
 
