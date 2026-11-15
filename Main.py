@@ -130,6 +130,7 @@ st.markdown("""
 
 # STEP 1: DOCUMENT UPLOAD
 st.markdown("## 01. Upload Your Syllabus")
+st.caption("Recommended syllabus structure: Subject → Unit → Topic → Concept.")
 
 st.markdown('<div class="panel">', unsafe_allow_html=True)
 
